@@ -25,7 +25,7 @@ with open(FILENAME, "r") as API_DATA_RAW:
 for path in API_DATA["paths"]:
     print("Path: {}".format(path))
     for method in API_DATA["paths"][path]:
-        if method not in ["get", "put", "patch", "post", "delete"]:
+        if method not in ["get", "put", "patch", "post", "delete", "head"]:
             continue
         print("Method: {}".format(method))
         try:
